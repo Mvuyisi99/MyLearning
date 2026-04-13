@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up | My Learning</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Your custom CSS -->
+        <link rel="stylesheet" href="MyLearningStyleSheet.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Large fixed card -->
+            <div class="card-container shadow-lg">
+                <div class="row g-0 h-100">
+
+                    <!-- Right: Form side (pure white background) -->
+                    <div class="col-6 right d-flex align-items-center justify-content-center">
+                        <div class="input-box">
+                            <header class="text-center fw-bold mb-4">Create account</header>
+                            <form name="f1" method="post" action="RegisterMyLearning">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="John" required>
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="surname" name="surname" placeholder="Doe" required>
+                                    <label for="surname">Surname</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="email@example.com" required>
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                                    <label for="password">Password</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                                    <label for="confirmPassword">Confirm Password</label>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                                </div>
+                                <div class="signin text-center mt-4">
+                                    <span>Already have an account? <a href="MyLearningLogginPage.html">Log in here</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Left: Image side (aligns with gray background) -->
+                    <div class="col-6 side-image position-relative">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>

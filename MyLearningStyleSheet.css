@@ -1,0 +1,367 @@
+* {
+    font-family: font-family: 'EB Garamond', serif !important;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    background: #ececec;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Fixed large card */
+.card-container {
+    width: 1550px;
+    height: 650px;
+    background: #fff;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+
+.card-container .row {
+    flex: 1;
+    margin: 0 !important;
+    display: flex;
+}
+
+/* LEFT SIDE - Image aligns with gray background */
+.side-image {
+    width: 50%;
+    background-image: url("Group 12 (3).png");
+	background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    flex-shrink: 0;
+}
+
+/* Overlay text - font sizes unchanged */
+.text {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 28px;        /* unchanged */
+    font-weight: 600;
+    text-align: left;
+}
+
+.text i {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 22px;        /* unchanged */
+}
+
+/* LEFT SIDE - Pure white background */
+.left {
+    width: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 60px;
+}
+
+.input-box {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* Header - font size unchanged */
+header {
+    font-size: 36px !important;    /* unchanged */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* Inputs - font sizes unchanged */
+.input {
+    height: 60px;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.15);
+    background: transparent;
+    padding: 15px 0 10px 0;
+    font-size: 18px;               /* unchanged */
+}
+
+.form-label {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    font-size: 18px;               /* unchanged */
+    color: #0C94C4;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input:focus ~ .form-label,
+.input:not(:placeholder-shown) ~ .form-label {
+    top: -8px;
+    font-size: 13px;               /* unchanged */
+    color: #043866;
+    background: white;
+    padding: 0 8px;
+}
+
+.input:focus {
+    border-bottom: 2px solid #043866;
+}
+
+/* Button - font size unchanged */
+.submit {
+    height: 60px;
+    background: #0C94C4;
+    border-radius: 12px;
+    font-size: 20px;               /* unchanged */
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.submit:hover {
+    background: #0C94C4;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(116, 58, 225, 0.3);
+}
+
+/* Sign in link - font size unchanged */
+.signin {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;               /* unchanged */
+}
+
+.signin a {
+    color: #0C94C4;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.signin a:hover {
+    text-decoration: underline;
+}
+
+/* NO MEDIA QUERIES - Fixed layout on all devices */
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background: #043867;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;;
+    padding: 8px 15px;  
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 22px;    
+    font-weight: 600;
+    color: white;
+}
+
+.logo-img {
+    width: 80px;         
+    height: 40px;        
+    margin-right: 12px;  
+    object-fit: contain;
+}
+
+.logo span {
+    color: white;
+}
+body{
+	background: linear-gradient(#FFFFFF,#0C94C4,#043867);
+	margin: 0;
+	height: 100vh;
+}
+@media(min-width: 768px){
+
+}
+
+.welcome-container {
+	min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 100px;                     /* Moves the whole block down — change this number */
+}
+
+.My_heading {
+    margin: 0 0 8px 0 !important;    /* Tiny controlled gap only */
+    font-size: 56px;
+    font-weight: 700;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.Welcome_text {
+    margin-top: 0;
+    font-family: 'EB Garamond', serif !important;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.5;
+    color: white;
+}
+
+.search-container {
+    position: fixed;           
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;             
+}
+.box{
+	background-color: #043867;
+	width: 600px;
+	height: 60px;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 25px;
+	
+}
+input{
+	width: 240px;
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 18px;
+	font-family: font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	caret-color: white;
+	color: white;
+}
+.fa-solid:hover{
+	color: orangered;
+	cue-before: pointer;
+}
+/* Courses Section - Grid of cards like Hillsdale */
+
+.course-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    aspect-ratio: 16 / 10; /* Keeps cards rectangular like the image */
+}
+
+.card-image {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); /* Dark fade at bottom */
+    padding: 30px 20px 20px;
+    color: white;
+}
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.card-meta i {
+    margin-right: 6px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+}
+
+.card-category {
+    font-size: 16px;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* Hover effect - optional but nice */
+.course-card:hover .card-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0.4));
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+
+/* Courses Section - Appears when you scroll down */
+.courses-section {
+    padding: 100px 20px;
+    background: linear-gradient(#043867,#0C94C4,#043867);
+    color: white;
+}
+
+.section-title {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 56px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 600;
+	color: black;
+	
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 0, 0, 0.8);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.delete-btn:hover {
+    opacity: 1;
+}
+
+
